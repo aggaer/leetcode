@@ -1,4 +1,4 @@
-package array
+package arr
 
 func MajorityElement(nums []int) int {
 	count := 0

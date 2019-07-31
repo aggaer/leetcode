@@ -1,8 +1,8 @@
 package main
 
-import "array"
+import "arr"
 
 func main() {
 	target := []int{3, 3, 4}
-	println(array.MajorityElement(target))
+	println(arr.MajorityElement(target))
 }

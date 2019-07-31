@@ -1,4 +1,4 @@
-package array
+package arr
 
 func twoSum(numbers []int, target int) []int {
 	low, high := 0, len(numbers)-1
