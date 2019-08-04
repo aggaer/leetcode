@@ -1,6 +1,8 @@
 package dynamicprogramming
 
-import "../utils"
+import (
+	"utils"
+)
 
 func MaxProfit(prices []int) int {
 	if len(prices) == 0 {
