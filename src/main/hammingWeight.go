@@ -1,6 +1,6 @@
 package main
 
-import "bytecategory"
+import "leetcode/src/bytecategory"
 
 func main() {
 	println(bytecategory.HammingWeight(63))
