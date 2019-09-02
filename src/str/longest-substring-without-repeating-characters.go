@@ -1,6 +1,6 @@
 package str
 
-import "utils"
+import "leetcode/src/utils"
 
 func lengthOfLongestSubstring(s string) int {
 	start, end, result := 0, 0, 0

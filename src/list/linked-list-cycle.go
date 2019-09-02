@@ -1,6 +1,6 @@
 package list
 
-import "model"
+import "leetcode/src/model"
 
 func hasCycle(head *model.ListNode) bool {
 	if head == nil {

@@ -1,6 +1,6 @@
 package list
 
-import "model"
+import "leetcode/src/model"
 
 func reverseBetween(head *model.ListNode, m int, n int) *model.ListNode {
 	dummy := model.ListNode{Val: -1, Next: head}

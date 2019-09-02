@@ -1,7 +1,7 @@
 package dynamicprogramming
 
 import (
-	"utils"
+	"leetcode/src/utils"
 )
 
 func MaxProfit(prices []int) int {

@@ -1,6 +1,6 @@
 package list
 
-import "model"
+import "leetcode/src/model"
 
 func removeElements(head *model.ListNode, val int) *model.ListNode {
 	if head == nil {
