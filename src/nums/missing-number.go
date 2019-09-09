@@ -1,4 +1,4 @@
-package others
+package nums
 
 func missingNumber(nums []int) int {
 	expect := (len(nums)) * (len(nums) + 1) / 2

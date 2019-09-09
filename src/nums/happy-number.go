@@ -1,4 +1,4 @@
-package others
+package nums
 
 func IsHappy(n int) bool {
 	m := make(map[int]bool)
