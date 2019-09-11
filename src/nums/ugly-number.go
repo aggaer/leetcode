@@ -1,4 +1,4 @@
-package others
+package nums
 
 func IsUgly(num int) bool {
 	if num == 0 {
