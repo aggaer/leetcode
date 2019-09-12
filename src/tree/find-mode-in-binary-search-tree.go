@@ -1,10 +1,12 @@
 package tree
 
-import "leetcode/src/model"
+import "github.com/aggaer/leetcode/src/model"
 
 var resp []int
 var pre *model.TreeNode
 var cnt int
+
+//noinspection SpellCheckingInspection
 var maxcnt int
 
 func FindMode(root *model.TreeNode) []int {
@@ -35,11 +37,11 @@ func traversal(root *model.TreeNode) {
 		}
 	}
 	if cnt == maxcnt {
-		resp = append(resp, pre.Val)
+		resp = append(resp, root.Val)
 	}
 	if cnt > maxcnt {
 		resp = resp[:0]
-		resp = append(resp, pre.Val)
+		resp = append(resp, root.Val)
 		maxcnt = cnt
 	}
 	pre = root

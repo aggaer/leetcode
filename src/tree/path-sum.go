@@ -1,6 +1,6 @@
 package tree
 
-import "model"
+import "github.com/aggaer/leetcode/src/model"
 
 func hasPathSum(root *model.TreeNode, sum int) bool {
 	if root == nil {

@@ -1,7 +1,7 @@
 package tree
 
 import (
-	"model"
+	"github.com/aggaer/leetcode/src/model"
 	"strconv"
 )
 

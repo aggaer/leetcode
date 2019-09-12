@@ -1,6 +1,6 @@
 package list
 
-import "leetcode/src/model"
+import "github.com/aggaer/leetcode/src/model"
 
 /**
  * Definition for singly-linked list.

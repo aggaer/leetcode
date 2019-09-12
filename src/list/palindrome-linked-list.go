@@ -1,6 +1,6 @@
 package list
 
-import "leetcode/src/model"
+import "github.com/aggaer/leetcode/src/model"
 
 //快慢指针，找到中间点，反转后半部分再和前半部分对比
 func IsPalindrome(head *model.ListNode) bool {

@@ -1,6 +1,6 @@
 package list
 
-import "leetcode/src/model"
+import "github.com/aggaer/leetcode/src/model"
 
 func reverseList(head *model.ListNode) *model.ListNode {
 	if head == nil || head.Next == nil {

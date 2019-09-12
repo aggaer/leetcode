@@ -1,7 +1,7 @@
 package tree
 
 import (
-	"leetcode/src/model"
+	"github.com/aggaer/leetcode/src/model"
 )
 
 var cur, result int

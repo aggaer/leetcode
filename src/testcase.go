@@ -1,12 +1,11 @@
 package main
 
 import (
-	"leetcode/src/model"
-	"leetcode/src/tree"
+	"github.com/aggaer/leetcode/src/model"
+	"github.com/aggaer/leetcode/src/tree"
 )
 
 //"---"
-//["asdfghjkl","qwertyuiop","zxcvbnm"]
 //3
 func main() {
 	//println(str.LicenseKeyFormatting("---", 3))
@@ -15,6 +14,7 @@ func main() {
 	root := &model.TreeNode{Val: 1}
 	root.Right = &model.TreeNode{Val: 2}
 	root.Right.Left = &model.TreeNode{Val: 2}
+
 	for _, v := range tree.FindMode(root) {
 		println(v)
 	}

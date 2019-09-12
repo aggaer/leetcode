@@ -1,6 +1,6 @@
 package tree
 
-import "model"
+import "github.com/aggaer/leetcode/src/model"
 
 func isBalanced(root *model.TreeNode) bool {
 	if root == nil {

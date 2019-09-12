@@ -1,6 +1,6 @@
 package tree
 
-import "model"
+import "github.com/aggaer/leetcode/src/model"
 
 func isUnivalTree(root *model.TreeNode) bool {
 	isLeft := root.Left == nil || root.Val == root.Left.Val && isUnivalTree(root.Left)

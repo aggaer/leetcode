@@ -1,6 +1,6 @@
 package list
 
-import "leetcode/src/model"
+import "github.com/aggaer/leetcode/src/model"
 
 func getIntersectionNode(headA, headB *model.ListNode) *model.ListNode {
 	if headA == nil || headB == nil {
