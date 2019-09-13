@@ -1,6 +1,6 @@
 package tree
 
-import "model"
+import "github.com/aggaer/leetcode/src/model"
 
 /**
  * Definition for TreeNode.

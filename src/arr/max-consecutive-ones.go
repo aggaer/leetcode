@@ -1,6 +1,6 @@
 package arr
 
-import "leetcode/src/utils"
+import "github.com/aggaer/leetcode/src/utils"
 
 //给定一个二进制数组， 计算其中最大连续1的个数。
 //输入: [1,1,0,1,1,1]
