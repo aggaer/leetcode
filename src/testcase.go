@@ -1,21 +1,13 @@
 package main
 
-import (
-	"github.com/aggaer/leetcode/src/model"
-	"github.com/aggaer/leetcode/src/tree"
-)
+import "github.com/aggaer/leetcode/src/arr"
 
 //"---"
 //3
+//noinspection SpellCheckingInspection
 func main() {
-	//println(str.LicenseKeyFormatting("---", 3))
-	//println(arr.FindMaxConsecutiveOnes([]int{1,0,1,1}))
-	//println(others.ConstructRectangle(12450)[1])
-	root := &model.TreeNode{Val: 1}
-	root.Right = &model.TreeNode{Val: 2}
-	root.Right.Left = &model.TreeNode{Val: 2}
-
-	for _, v := range tree.FindMode(root) {
+	ranks := arr.FindRelativeRanks([]int{10,3,8,9,4})
+	for _, v := range ranks {
 		println(v)
 	}
 }

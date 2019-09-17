@@ -1,0 +1,40 @@
+package str
+
+func FindAnagrams(s string, p string) []int {
+	var resp []int
+	l, r, match, capP := 0, 0, 0, 0
+	need := make([]int, 26)
+	window := make([]int, 26)
+	for _, v := range p {
+		if need[v-'a'] == 0 {
+			capP++
+		}
+		need[v-'a']++
+	}
+	for r < len(s) {
+		cur := s[r] - 'a'
+		if need[cur] != 0 {
+			window[cur]++
+			if window[cur] == need[cur] {
+				match++
+			}
+		}
+		r++
+		//若窗口匹配则l向右缩进，直到满足条件
+		for match == capP {
+			if r-l == len(p) {
+				resp = append(resp, l)
+			}
+			//l向左缩进到r的位置
+			cur := s[l] - 'a'
+			if window[cur] != 0 {
+				window[cur]--
+				if window[cur] < need[cur] {
+					match--
+				}
+			}
+			l++
+		}
+	}
+	return resp
+}
