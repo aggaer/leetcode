@@ -1,11 +1,12 @@
 package nums
 
 func Fib(N int) int {
-	if N == 0 {
-		return 0
+	if N <= 1 {
+		return N
 	}
-	if N == 1 {
-		return 1
+	a, b := 0, 1
+	for i := 2; i <= N; i++ {
+		b, a = b+a, b
 	}
-	return Fib(N-1) + Fib(N-2)
+	return b
 }
