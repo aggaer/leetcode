@@ -2,7 +2,8 @@ package main
 
 import "github.com/aggaer/leetcode/src/arr"
 
-
 func main() {
-	println(arr.FindPairs([]int{3,1,4,1,5}, 2))
+	for _, e := range arr.Intersect([]int{4,9,5}, []int{9,4,9,8,4}) {
+		println(e)
+	}
 }
